@@ -1,0 +1,8 @@
+# Also a Docker compose file for people who want to be boring
+
+
+services:
+  meshagent:
+    image: docker-meshagent:latest
+    deploy:
+      replicas: 10
