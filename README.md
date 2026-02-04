@@ -4,8 +4,6 @@ First off, we need Docker. Install it [through this link here](https://docs.dock
 Then we need to build the agent. Go into that directory:  
 
 ```sh
-cd ./agent
-
 docker build agent/ \
   -f agent/Dockerfile \
   --build-arg meshcentral_server='<meshcentral-server-hostname>' \
