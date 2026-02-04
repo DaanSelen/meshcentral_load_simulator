@@ -3,7 +3,7 @@
 Example:
 
 ```shell
-docker docker build . \
+docker build . \
   --build-arg meshcentral_server='<meshcentral-server-hostname>' \
   --build-arg meshcentral_gid='<meshcentral-group-meshid>' \
   --build-arg meshcentral_aid='<meshcentral-agent-id>' \
