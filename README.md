@@ -36,6 +36,7 @@ All of the above can be ignored if you are using Docker Compose. Then just use t
 
 # Example:
 
+```
 $ docker build agent/ -f agent/Dockerfile   --build-arg meshcentral_server='<meshcentral-server-hostname>'   --build-arg meshcentral_gid='<meshcentral-group-meshid>'   --build-arg meshcentral_aid='6'   -t docker-meshagent:latest
 [+] Building 0.6s (9/9) FINISHED                                                                                                                                                                   docker:default
  => [internal] load build definition from Dockerfile                                                                                                                                                         0.0s
@@ -107,3 +108,4 @@ f87e6e2b33b2
 9a8a64693198
 f9a4fd167ed9
 b73e7064bb1b
+```
