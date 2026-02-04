@@ -15,19 +15,19 @@ docker build agent/ \
 After that, run the script or Docker compose file, for example:  
 
 ```sh
-./deploy <amount of agents> <image-name>
+./deploy.sh <amount of agents> <image-name>
 ```
 
 An example would be:  
 
 ```sh
-./deploy 100 docker-meshagent:latest
+./deploy.sh 100 docker-meshagent:latest
 ```
 
 To clean all of them up:  
 
 ```
-./deploy kill
+./deploy.sh kill
 ```
 
 All of the above can be ignored if you are using Docker Compose. Then just use the Docker `compose up`, `compose kill/down` commands.  
