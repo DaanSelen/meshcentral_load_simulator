@@ -5,4 +5,4 @@ services:
   meshagent:
     image: docker-meshagent:latest
     deploy:
-      replicas: 10
+      replicas: 2500
