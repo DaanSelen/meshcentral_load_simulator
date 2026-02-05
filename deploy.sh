@@ -4,8 +4,14 @@ if ! command -v docker > /dev/null; then
     echo "Docker is not installed, aborting!"
 fi
 
-if [[ -z "$1" ]]; then
-    echo "Please use the amount of agents you want to simulate. or 'kill' to stop all"
+if [[ $1 == "kill" ]]; then
+    echo "Issuing a kill"
+    docker rm -f $(docker ps -a -q --filter "name=meshagent-")
+    exit 0
+fi
+
+if [[ -z $1 ]]; then
+    echo "Please use the amount of agents you want to simulate."
     echo "For example: ./$0 100 ..."
     exit 1
 fi
